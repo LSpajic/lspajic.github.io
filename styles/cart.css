@@ -144,57 +144,35 @@ header {
 }
 
 /* Responsive Design - Matching main.css breakpoints */
-@media (max-width: 768px) {
-    .header-container {
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        height: 10vh;
+    }
+
+    .content-layout {
+        flex-direction: column;
+    }
+
+    .categories-sidebar {
+        width: 100%;
+        position: static;
+        display: flex;
         flex-wrap: wrap;
-        padding: 10px 0;
+        gap: 20px;
     }
 
-    .logo {
-        flex: 0 0 100%;
-        justify-content: center;
-        margin-bottom: 5px;
-    }
-
-    .cart-title {
+    .categories-sidebar nav {
         flex: 1;
-        order: 2;
+        min-width: 200px;
     }
 
-    .header-controls {
+    .contact-section {
         flex: 1;
-        order: 3;
-        justify-content: flex-end;
-    }
-
-    .cart-title h1 {
-        font-size: 1.2rem;
+        min-width: 200px;
+        margin-top: 0;
     }
 }
-
-@media (max-width: 480px) {
-    .header-container {
-        flex-direction: column;
-    }
-
-    .logo,
-    .cart-title,
-    .header-controls {
-        flex: 0 0 auto;
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .header-controls {
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .quantity-controls {
-        flex-direction: column;
-        gap: 5px;
-    }
 
     .quantity-btn {
         padding: 4px 8px;
