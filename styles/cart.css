@@ -147,7 +147,7 @@ header {
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
-        height: 10vh;
+        height: 14vh;
     }
 
     .content-layout {
