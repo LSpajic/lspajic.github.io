@@ -347,7 +347,7 @@ footer {
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
-        height: 14vh;
+        height: 10vh;
     }
 
     .content-layout {
