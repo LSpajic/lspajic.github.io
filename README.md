@@ -14,6 +14,6 @@
 - Organized all files according to specified structure
 
 ## Author
-[Lovro Spajic]  
-[FER]  
-[10.4.2025]
+Lovro Spajic
+FER
+10.4.2025
