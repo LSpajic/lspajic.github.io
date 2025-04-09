@@ -40,7 +40,7 @@ def search_and_download(ddgs, search_term, file_path):
         
     try:
         results = ddgs.images(
-            f"{search_term} instrument no watermark",
+            f"{search_term} wikipedia",
             safesearch='moderate',
             max_results=1
         )

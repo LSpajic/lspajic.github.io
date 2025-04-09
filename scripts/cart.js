@@ -74,6 +74,7 @@ function updateQuantity(productName, change) {
 
     // Refresh display
     initializeCart();
+    updateCartCounter(true);
 }
 
 // Initialize when page loads
