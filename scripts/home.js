@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    updateCartCounter();
-    updateCartIndicator();
 
     document.querySelector('.search-btn').addEventListener('click', function (e) {
         e.preventDefault();
@@ -126,5 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 300);
         }
     }
+    updateCartCounter();
+    updateCartIndicator();
 });
 
