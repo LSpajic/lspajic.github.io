@@ -38,5 +38,4 @@ function updateCartCounter(shouldAnimate = false) {
 
 document.addEventListener('DOMContentLoaded', function () {
     updateCartCounter();
-    updateCartIndicator();
 });
