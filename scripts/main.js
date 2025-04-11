@@ -29,13 +29,15 @@ function updateCartCounter(shouldAnimate = false) {
             if (shouldAnimate) {
                 // Add pulse animation
                 counter.classList.add('pulse');
-                setTimeout(() => counter.classList.remove('pulse'), 200);
+                setTimeout(() => counter.classList.remove('pulse'), 500);
             }
         } else {
             counter.style.display = 'none';
         }
     }
 }
+
+
 
 // Call this when the page loads
 document.addEventListener('DOMContentLoaded', function () {

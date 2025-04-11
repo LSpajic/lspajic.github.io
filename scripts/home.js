@@ -134,9 +134,17 @@ document.addEventListener('DOMContentLoaded', function () {
         if (cart[productName] > 0) {
             const quantity = cart[productName];
             const indicator = document.createElement('div');
-            indicator.className = 'numberCircle';
+            indicator.className = 'numberCircle'; // Base class
             indicator.textContent = quantity;
             productCard.appendChild(indicator);
+
+            // Add the 'update' class to trigger animations/effects
+            indicator.classList.add('update');
+
+            // Optional: Remove 'update' after animation completes (e.g., for a pulse effect)
+            setTimeout(() => {
+                indicator.classList.remove('update');
+            }, 300); // Match this duration to your CSS animation
         }
     }
 });
