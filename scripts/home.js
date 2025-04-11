@@ -124,7 +124,5 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 300);
         }
     }
-    updateCartCounter();
-    updateCartIndicator();
 });
 
