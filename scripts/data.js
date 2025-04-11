@@ -90,7 +90,7 @@ const data = {
             "products": [
                 { "name": "Žice za gitaru", "image": "images/guitar-strings.jpg" },
                 { "name": "Trzajice", "image": "images/guitar-picks.jpg" },
-                { "name": "Stalak za notno", "image": "images/music-stand.jpg" },
+                { "name": "Stalak za note", "image": "images/music-stand.jpg" },
                 { "name": "Tuner", "image": "images/tuner.jpg" },
                 { "name": "Korektor tona", "image": "images/pitch-corrector.jpg" }
             ]
