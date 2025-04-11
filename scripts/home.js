@@ -51,28 +51,29 @@ function loadFeaturedProducts(category) {
     });
 }
 
-function updateCartIndicator(productCard, productName) {
-    const existingIndicator = productCard.querySelector('.numberCircle');
-    if (existingIndicator) {
-        existingIndicator.remove();
-    }
-
-    if (cart[productName] > 0) {
-        const quantity = cart[productName];
-        const indicator = document.createElement('div');
-        indicator.className = 'numberCircle';
-        indicator.textContent = quantity;
-        productCard.appendChild(indicator);
-
-        indicator.classList.add('update');
-
-        setTimeout(() => {
-            indicator.classList.remove('update');
-        }, 300);
-    }
-}
 
 document.addEventListener('DOMContentLoaded', function () {
+
+    function updateCartIndicator(productCard, productName) {
+        const existingIndicator = productCard.querySelector('.numberCircle');
+        if (existingIndicator) {
+            existingIndicator.remove();
+        }
+
+        if (cart[productName] > 0) {
+            const quantity = cart[productName];
+            const indicator = document.createElement('div');
+            indicator.className = 'numberCircle';
+            indicator.textContent = quantity;
+            productCard.appendChild(indicator);
+
+            indicator.classList.add('update');
+
+            setTimeout(() => {
+                indicator.classList.remove('update');
+            }, 300);
+        }
+    }
     updateCartCounter();
     updateCartIndicator();
 
