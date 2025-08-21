@@ -1,0 +1,135 @@
+/* Sieve of Eratosthenes specific styles */
+:root {
+    --prime: #4CAF50;      /* Green for prime numbers */
+    --non-prime: #F44336;  /* Red for non-prime numbers */
+    --checking: #FFEB3B;   /* Yellow for numbers being checked */
+    --divisor: #FFFFFF;    /* White for current divisor */
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+.legend-prime {
+    background-color: var(--prime);
+}
+
+.legend-non-prime {
+    background-color: var(--non-prime);
+}
+
+.legend-checking {
+    background-color: var(--checking);
+}
+
+.legend-divisor {
+    background-color: var(--divisor);
+}
+
+.status {
+    text-align: center;
+    margin: 15px 0;
+    min-height: 24px;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.sieve-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+    color: black;
+}
+
+.number.prime {
+    background-color: var(--prime);
+}
+
+.number.non-prime {
+    background-color: var(--non-prime);
+}
+
+.number.checking {
+    background-color: var(--checking);
+    animation: pulse 1.5s infinite;
+}
+
+.number.divisor {
+    background-color: var(--divisor);
+    animation: highlight 1s infinite;
+}
+
+.number.neutral {
+    background-color: #2a2f40;
+    color: var(--text);
+}
+
+.speed-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.speed-control label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes highlight {
+    0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
+    70% { box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+@media (max-width: 768px) {
+    .number {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+    
+    .legend {
+        gap: 10px;
+    }
+    
+    .legend-item {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourier Series</title>
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <div class="wrap">
+        <a href="index.html" class="back-link">← Back to Animations</a>
+        
+        <header class="site">
+            <h1>Fourier Series</h1>
+            <p>Epicycle visualization of waveform approximations</p>
+        </header>
+        
+        <nav class="toc">
+            <a class="chip" href="hungarian.html">Hungarian</a>
+            <a class="chip" href="mandelbrot.html">Mandelbrot</a>
+            <a class="chip" href="conway.html">Conway</a>
+            <a class="chip" href="sieve.html">Sieve</a>
+            <button class="chip" id="stopAll">Stop All</button>
+        </nav>
+
+        <section class="card">
+            <h2>Fourier Series Epicycles</h2>
+            <div class="controls">
+                <label>Waveform
+                  <select id="fwType">
+                    <option value="square">Square</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="saw">Sawtooth</option>
+                  </select>
+                </label>
+                <label>Harmonics <input id="fwHarm" type="range" min="1" max="20" value="8" /></label>
+                <span class="badge" id="fwHarmLabel">8</span>
+                <button id="fwStart">Start</button>
+                <button id="fwStop">Stop</button>
+            </div>
+            <canvas id="fwCanvas" width="1000" height="420"></canvas>
+        </section>
+
+        <footer>
+            <p>lspajic</p>
+        </footer>    </div>
+
+    <script src="scripts/shared.js"></script>
+    <script src="scripts/fourier.js"></script>
+</body>
+</html>

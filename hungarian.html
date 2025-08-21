@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungarian Algorithm</title>
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <div class="wrap">
+        <a href="index.html" class="back-link">← Back to Animations</a>
+        
+        <header class="site">
+            <h1>Hungarian Algorithm</h1>
+            <p>Optimal assignment problem solver for 4×4 matrices</p>
+        </header>
+        
+        <nav class="toc">
+            <a class="chip" href="fourier.html">Fourier</a>
+            <a class="chip" href="mandelbrot.html">Mandelbrot</a>
+            <a class="chip" href="conway.html">Conway</a>
+            <a class="chip" href="sieve.html">Sieve</a>
+            <button class="chip" id="stopAll">Stop All</button>
+        </nav>
+
+        <section class="card">
+            <h2>Hungarian Algorithm (4×4, custom weights)</h2>
+            <div class="controls">
+                <button id="huCompute">Compute</button>
+                <button id="huRandom">Randomize</button>
+                <span class="badge" id="huTotal">Total: —</span>
+            </div>
+            <table class="matrix" id="huTable"></table>
+            <p class="note">Enter a 4×4 cost matrix. "Compute" runs the Hungarian algorithm and highlights the optimal assignment.</p>
+        </section>
+
+        <footer>
+            <p>lspajic</p>
+        </footer>    </div>
+
+    <script src="scripts/shared.js"></script>
+    <script src="scripts/hungarian.js"></script>
+</body>
+</html>
